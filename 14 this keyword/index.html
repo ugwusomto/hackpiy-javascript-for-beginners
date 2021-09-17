@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 600px;
+      height: 300px;
+      border: 5px dashed purple;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px auto;
+    }
+
+    button{
+      margin: 10px;
+      width: 150px;
+      height: 50px;
+      background-color: purple;
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      border: none;
+    }
+
+    button:hover{
+      transition: all 1s;
+      border: 2px solid purple;
+      color: purple;
+      background-color: #fff;
+    }
+
+    h1{
+      text-align: center;
+      color: #000;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+    
+  <h1>Javascript "this" Keyword</h1>
+  <div class="container">
+       
+       <button onclick="displayInnerText(this)" >Button One</button>
+       <button onclick="displayInnerText(this)" >Button Two</button>
+       <button onclick="displayInnerText(this)">Button Three</button>
+       <button onclick="displayInnerText(this)">Button Four</button>
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
