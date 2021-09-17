@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>HTML5 Forms</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Adder Calculator</h1>
+      <form id="form" action="" method="POST">
+          <div class="form-row">
+            <label for="number1">First Number</label>
+            <input required type="number" id="number1" placeholder="Enter Your First Number"  value="0">
+          </div>
+
+          <div class="form-row">
+            <label for="number2">Second Number</label>
+            <input required type="number" id="number2" placeholder="Enter Your Second Number" value="0">
+          </div>
+
+          <div class="form-row">
+            <input class="submit" type="submit" value="Add" >
+          </div>
+
+           <hr>
+           <h1 id="heading">Display</h1>
+           <p id="display"></p>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
